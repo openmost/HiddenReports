@@ -68,9 +68,7 @@
                 :disabled="!editableReportsOf(category).length || isCategorySaving(category)"
                 @change="onToggleCategory(category, $event)"
               />
-              <span
-                :class="['lever', { hiddenReportsLeverPartial: isCategoryPartial(category) }]"
-              />
+              <span class="lever" />
               {{ translate('HiddenReports_Hidden') }}
             </label>
           </div>
@@ -290,10 +288,6 @@ export default defineComponent({
     isCategoryHidden(category: ReportCategory): boolean {
       const reports = this.reportsOf(category);
       return reports.length > 0 && reports.every((report) => report.hidden);
-    },
-    isCategoryPartial(category: ReportCategory): boolean {
-      const count = this.hiddenCount(category);
-      return count > 0 && count < this.reportsOf(category).length;
     },
     isCategorySaving(category: ReportCategory): boolean {
       return this.reportsOf(category).some((report) => !!this.saving[report.id]);
