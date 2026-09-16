@@ -1,10 +1,10 @@
-# Hide Reports
+# Hidden Reports
 
 Hide reports from the Matomo reporting menu, for one website or for all websites at once, without losing any data.
 
 ## Description
 
-Some reports are not relevant for every team or every website. With Hide Reports, you choose which reports appear in the reporting menu, from two dedicated pages:
+Some reports are not relevant for every team or every website. With Hidden Reports, you choose which reports appear in the reporting menu, from two dedicated pages:
 
 - __Administration > Websites > Hidden reports__: website admins hide reports for the selected website.
 - __Administration > System > Hidden reports__: super users hide reports for all websites at once.
@@ -23,7 +23,7 @@ Hiding a report only removes it from the reporting menu:
 
 A report hidden for all websites by a super user is locked on the website pages.
 
-HTTP API: `HideReports.getReports`, `HideReports.getGlobalReports`, `HideReports.getHiddenReports`, `HideReports.setReportHidden`, `HideReports.setReportsHidden`, `HideReports.setReportHiddenGlobally`, `HideReports.setReportsHiddenGlobally`.
+HTTP API: `HiddenReports.getReports`, `HiddenReports.getGlobalReports`, `HiddenReports.getHiddenReports`, `HiddenReports.setReportHidden`, `HiddenReports.setReportsHidden`, `HiddenReports.setReportHiddenGlobally`, `HiddenReports.setReportsHiddenGlobally`.
 
 __Thank you for installing !__
 

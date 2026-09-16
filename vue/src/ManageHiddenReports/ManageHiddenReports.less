@@ -1,13 +1,13 @@
-.hideReportsManage {
-  .hideReportsSearch {
+.hiddenReportsManage {
+  .hiddenReportsSearch {
     max-width: 480px;
   }
 
-  .hideReportsEmpty {
+  .hiddenReportsEmpty {
     font-style: italic;
   }
 
-  .hideReportsCategory {
+  .hiddenReportsCategory {
     border: 1px solid @theme-color-border;
     border-radius: 4px;
     margin-bottom: 8px;
@@ -15,7 +15,7 @@
     overflow: hidden;
   }
 
-  .hideReportsCategoryHeader {
+  .hiddenReportsCategoryHeader {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -34,27 +34,27 @@
     }
   }
 
-  .hideReportsCategoryOpen .hideReportsCategoryHeader {
+  .hiddenReportsCategoryOpen .hiddenReportsCategoryHeader {
     border-bottom: 1px solid @theme-color-border;
   }
 
-  .hideReportsChevron {
+  .hiddenReportsChevron {
     font-size: 12px;
     color: @theme-color-text-light;
   }
 
-  .hideReportsCategoryName {
+  .hiddenReportsCategoryName {
     font-size: 15px;
     font-weight: bold;
     color: @theme-color-text;
   }
 
-  .hideReportsCategoryCount {
+  .hiddenReportsCategoryCount {
     font-size: 12px;
     color: @theme-color-text-lighter;
   }
 
-  .hideReportsCategorySwitch {
+  .hiddenReportsCategorySwitch {
     margin-left: auto;
     cursor: default;
   }
@@ -65,33 +65,33 @@
   }
 
   // some reports of the category are hidden: lever halfway
-  .switch label input[type=checkbox]:not(:checked) + .lever.hideReportsLeverPartial:after {
+  .switch label input[type=checkbox]:not(:checked) + .lever.hiddenReportsLeverPartial:after {
     left: 9px;
     background-color: @theme-color-brand;
   }
 
-  .hideReportsTable {
+  .hiddenReportsTable {
     margin: 0;
 
-    .hideReportsColType {
+    .hiddenReportsColType {
       width: 200px;
     }
 
-    .hideReportsColStatus {
+    .hiddenReportsColStatus {
       width: 260px;
     }
 
-    tr.hideReportsSubcategory td {
+    tr.hiddenReportsSubcategory td {
       font-weight: bold;
       background-color: @theme-color-background-tinyContrast;
     }
 
-    tr.hideReportsIsHidden .hideReportsName {
+    tr.hiddenReportsIsHidden .hiddenReportsName {
       color: @theme-color-text-lighter;
       text-decoration: line-through;
     }
 
-    .hideReportsId {
+    .hiddenReportsId {
       display: block;
       margin-top: 2px;
       font-size: 11px;
@@ -101,7 +101,7 @@
       word-break: break-all;
     }
 
-    .hideReportsLocked {
+    .hiddenReportsLocked {
       display: block;
       margin-top: 4px;
       font-size: 11px;
@@ -113,7 +113,7 @@
     }
   }
 
-  .hideReportsBadge {
+  .hiddenReportsBadge {
     display: inline-block;
     padding: 2px 8px;
     border-radius: 10px;
@@ -124,22 +124,22 @@
     color: @theme-color-text-light;
   }
 
-  .hideReportsBadge-customReport,
-  .hideReportsBadge-customDimension {
+  .hiddenReportsBadge-customReport,
+  .hiddenReportsBadge-customDimension {
     border-color: @theme-color-brand;
     color: @theme-color-brand;
   }
 
-  .hideReportsBadge-widget {
+  .hiddenReportsBadge-widget {
     border-style: dashed;
   }
 }
 
 // ContentTable makes tables bleed to the card edges (negative margin, width + 40px): keep them inside the category
-.card > .card-content .hideReportsManage .hideReportsCategory,
-.hideReportsManage .card > .card-content .hideReportsCategory {
-  .card-table.hideReportsTable,
-  .contentTableWrapper > .card-table.hideReportsTable {
+.card > .card-content .hiddenReportsManage .hiddenReportsCategory,
+.hiddenReportsManage .card > .card-content .hiddenReportsCategory {
+  .card-table.hiddenReportsTable,
+  .contentTableWrapper > .card-table.hiddenReportsTable {
     margin: 0;
     width: 100%;
     min-width: 100%;

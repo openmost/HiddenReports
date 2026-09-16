@@ -7,7 +7,7 @@
  * @license https://www.gnu.org/licenses/gpl-3.0.html GPL v3 or later
  */
 
-namespace Piwik\Plugins\HideReports;
+namespace Piwik\Plugins\HiddenReports;
 
 use Exception;
 use Piwik\Piwik;
@@ -16,7 +16,7 @@ use Piwik\Piwik;
  * Hide reports from the reporting menu, for one website or for all websites. Hidden reports stay archived and keep
  * working through the API, exports, scheduled reports and dashboards.
  *
- * @method static \Piwik\Plugins\HideReports\API getInstance()
+ * @method static \Piwik\Plugins\HiddenReports\API getInstance()
  */
 class API extends \Piwik\Plugin\API
 {
@@ -117,7 +117,7 @@ class API extends \Piwik\Plugin\API
 
         foreach ($reportIds as $reportId) {
             if (!in_array($reportId, $known, true)) {
-                throw new Exception(Piwik::translate('HideReports_ErrorUnknownReport'));
+                throw new Exception(Piwik::translate('HiddenReports_ErrorUnknownReport'));
             }
         }
 
@@ -174,7 +174,7 @@ class API extends \Piwik\Plugin\API
         $reportId = trim((string) $reportId);
 
         if ($reportId === '' || strlen($reportId) > 255 || !preg_match('/^(widget:\S+|[A-Za-z0-9_]+\.[A-Za-z0-9_]+\S*)$/', $reportId)) {
-            throw new Exception(Piwik::translate('HideReports_ErrorUnknownReport'));
+            throw new Exception(Piwik::translate('HiddenReports_ErrorUnknownReport'));
         }
 
         return $reportId;
@@ -193,7 +193,7 @@ class API extends \Piwik\Plugin\API
         $reportIds = array_values(array_unique(array_map([$this, 'checkReportId'], $reportIds)));
 
         if (empty($reportIds) || count($reportIds) > 1000) {
-            throw new Exception(Piwik::translate('HideReports_ErrorUnknownReport'));
+            throw new Exception(Piwik::translate('HiddenReports_ErrorUnknownReport'));
         }
 
         return $reportIds;

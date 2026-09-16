@@ -1,5 +1,5 @@
 {
-  "name": "HideReports",
+  "name": "HiddenReports",
   "description": "Hide reports from the reporting menu, per website or for all websites, while keeping them archived and available through the API and dashboards",
   "version": "6.0.0",
   "theme": false,
@@ -7,7 +7,7 @@
     "php": ">=8.1.0",
     "matomo": ">=6.0.0-b1,<7.0.0-b1"
   },
-  "homepage": "https://openmost.com/matomo/extensions/hide-reports",
+  "homepage": "https://openmost.com/matomo/extensions/hidden-reports",
   "license": "GPL v3+",
   "keywords": [
     "reports",
@@ -19,8 +19,8 @@
   ],
   "support": {
     "email": "ronan@openmost.com",
-    "issues": "https://github.com/openmost/HideReports/issues",
-    "source": "https://github.com/openmost/HideReports"
+    "issues": "https://github.com/openmost/HiddenReports/issues",
+    "source": "https://github.com/openmost/HiddenReports"
   },
   "authors": [
     {

@@ -7,7 +7,7 @@
  * @license https://www.gnu.org/licenses/gpl-3.0.html GPL v3 or later
  */
 
-namespace Piwik\Plugins\HideReports;
+namespace Piwik\Plugins\HiddenReports;
 
 use Piwik\Option;
 
@@ -16,8 +16,8 @@ use Piwik\Option;
  */
 class HiddenReportsStore
 {
-    public const OPTION_PREFIX = 'HideReports_';
-    public const OPTION_GLOBAL = 'HideReports_global';
+    public const OPTION_PREFIX = 'HiddenReports_';
+    public const OPTION_GLOBAL = 'HiddenReports_global';
 
     /**
      * @return string[]
