@@ -6,39 +6,39 @@
 -->
 
 <template>
-  <div class="hideReportsManage">
+  <div class="hiddenReportsManage">
     <ContentBlock :content-title="title">
       <p>{{ intro }}</p>
       <Alert severity="info" v-if="isGlobal">
-        {{ translate('HideReports_GlobalSiteSpecificNote') }}
+        {{ translate('HiddenReports_GlobalSiteSpecificNote') }}
       </Alert>
       <Alert severity="info" v-else-if="hasGloballyHidden">
-        {{ translate('HideReports_ScopeNote') }}
+        {{ translate('HiddenReports_ScopeNote') }}
       </Alert>
 
-      <div class="hideReportsSearch">
+      <div class="hiddenReportsSearch">
         <Field
           uicontrol="text"
-          name="hideReportsSearch"
+          name="hiddenReportsSearch"
           v-model="search"
-          :title="translate('HideReports_Search')"
+          :title="translate('HiddenReports_Search')"
           :full-width="true"
         />
       </div>
 
       <ActivityIndicator :loading="isLoading" />
 
-      <p v-if="!isLoading && filteredCategories.length === 0" class="hideReportsEmpty">
-        {{ translate('HideReports_NoReportsFound') }}
+      <p v-if="!isLoading && filteredCategories.length === 0" class="hiddenReportsEmpty">
+        {{ translate('HiddenReports_NoReportsFound') }}
       </p>
 
       <div
         v-for="category in filteredCategories"
         :key="category.id"
-        :class="['hideReportsCategory', { hideReportsCategoryOpen: isOpen(category) }]"
+        :class="['hiddenReportsCategory', { hiddenReportsCategoryOpen: isOpen(category) }]"
       >
         <div
-          class="hideReportsCategoryHeader"
+          class="hiddenReportsCategoryHeader"
           role="button"
           tabindex="0"
           :aria-expanded="isOpen(category) ? 'true' : 'false'"
@@ -47,66 +47,68 @@
           @keydown.space.prevent="toggleOpen(category)"
         >
           <span
-            :class="['hideReportsChevron', chevronClass(category)]"
+            :class="['hiddenReportsChevron', chevronClass(category)]"
           />
-          <span class="hideReportsCategoryName">{{ category.name }}</span>
-          <span class="hideReportsCategoryCount">
-            {{ translate('HideReports_HiddenOfTotal', `${hiddenCount(category)}`,
+          <span class="hiddenReportsCategoryName">{{ category.name }}</span>
+          <span class="hiddenReportsCategoryCount">
+            {{ translate('HiddenReports_HiddenOfTotal', `${hiddenCount(category)}`,
                          `${reportsOf(category).length}`) }}
           </span>
           <div
-            class="switch hideReportsCategorySwitch"
-            :title="translate('HideReports_HideCategory')"
+            class="switch hiddenReportsCategorySwitch"
+            :title="translate('HiddenReports_HideCategory')"
             @click.stop
             @keydown.stop
           >
             <label>
-              {{ translate('HideReports_Visible') }}
+              {{ translate('HiddenReports_Visible') }}
               <input
                 type="checkbox"
                 :checked="isCategoryHidden(category)"
                 :disabled="!editableReportsOf(category).length || isCategorySaving(category)"
                 @change="onToggleCategory(category, $event)"
               />
-              <span :class="['lever', { hideReportsLeverPartial: isCategoryPartial(category) }]" />
-              {{ translate('HideReports_Hidden') }}
+              <span
+                :class="['lever', { hiddenReportsLeverPartial: isCategoryPartial(category) }]"
+              />
+              {{ translate('HiddenReports_Hidden') }}
             </label>
           </div>
         </div>
 
-        <table v-if="isOpen(category)" v-content-table class="entityTable hideReportsTable">
+        <table v-if="isOpen(category)" v-content-table class="entityTable hiddenReportsTable">
           <thead>
             <tr>
-              <th class="hideReportsColName">{{ translate('HideReports_ColumnReport') }}</th>
-              <th class="hideReportsColType">{{ translate('HideReports_ColumnType') }}</th>
-              <th class="hideReportsColStatus">{{ translate('HideReports_ColumnStatus') }}</th>
+              <th class="hiddenReportsColName">{{ translate('HiddenReports_ColumnReport') }}</th>
+              <th class="hiddenReportsColType">{{ translate('HiddenReports_ColumnType') }}</th>
+              <th class="hiddenReportsColStatus">{{ translate('HiddenReports_ColumnStatus') }}</th>
             </tr>
           </thead>
           <tbody v-for="subcategory in category.subcategories" :key="subcategory.id">
-            <tr class="hideReportsSubcategory">
+            <tr class="hiddenReportsSubcategory">
               <td colspan="3">{{ subcategory.name }}</td>
             </tr>
             <tr
               v-for="report in subcategory.reports"
               :key="report.id"
-              :class="{ hideReportsIsHidden: report.hidden }"
+              :class="{ hiddenReportsIsHidden: report.hidden }"
             >
-              <td class="hideReportsColName">
-                <span class="hideReportsName">{{ report.name }}</span>
-                <code class="hideReportsId">{{ report.id }}</code>
+              <td class="hiddenReportsColName">
+                <span class="hiddenReportsName">{{ report.name }}</span>
+                <code class="hiddenReportsId">{{ report.id }}</code>
               </td>
-              <td class="hideReportsColType">
-                <span :class="['hideReportsBadge', `hideReportsBadge-${report.type}`]">
+              <td class="hiddenReportsColType">
+                <span :class="['hiddenReportsBadge', `hiddenReportsBadge-${report.type}`]">
                   {{ typeLabel(report.type) }}
                 </span>
               </td>
-              <td class="hideReportsColStatus">
+              <td class="hiddenReportsColStatus">
                 <div
                   class="switch"
-                  :title="isLocked(report) ? translate('HideReports_HiddenGlobally') : ''"
+                  :title="isLocked(report) ? translate('HiddenReports_HiddenGlobally') : ''"
                 >
                   <label>
-                    {{ translate('HideReports_Visible') }}
+                    {{ translate('HiddenReports_Visible') }}
                     <input
                       type="checkbox"
                       :checked="report.hidden"
@@ -114,11 +116,11 @@
                       @change="onToggleReport(report, $event)"
                     />
                     <span class="lever" />
-                    {{ translate('HideReports_Hidden') }}
+                    {{ translate('HiddenReports_Hidden') }}
                   </label>
                 </div>
-                <span v-if="isLocked(report)" class="hideReportsLocked icon-locked">
-                  {{ translate('HideReports_HiddenGlobally') }}
+                <span v-if="isLocked(report)" class="hiddenReportsLocked icon-locked">
+                  {{ translate('HiddenReports_HiddenGlobally') }}
                 </span>
               </td>
             </tr>
@@ -210,10 +212,10 @@ export default defineComponent({
       return this.search.trim() !== '';
     },
     title(): string {
-      return translate(this.isGlobal ? 'HideReports_GlobalTitle' : 'HideReports_SiteTitle');
+      return translate(this.isGlobal ? 'HiddenReports_GlobalTitle' : 'HiddenReports_SiteTitle');
     },
     intro(): string {
-      return translate(this.isGlobal ? 'HideReports_GlobalIntro' : 'HideReports_SiteIntro');
+      return translate(this.isGlobal ? 'HiddenReports_GlobalIntro' : 'HiddenReports_SiteIntro');
     },
     hasGloballyHidden(): boolean {
       return this.categories.some(
@@ -253,7 +255,7 @@ export default defineComponent({
       this.isLoading = true;
 
       AjaxHelper.fetch<ReportCategory[]>({
-        method: this.isGlobal ? 'HideReports.getGlobalReports' : 'HideReports.getReports',
+        method: this.isGlobal ? 'HiddenReports.getGlobalReports' : 'HiddenReports.getReports',
         idSite: this.idSite,
         filter_limit: '-1',
       }).then((categories) => {
@@ -298,18 +300,18 @@ export default defineComponent({
     },
     typeLabel(type: HiddenReport['type']): string {
       if (type === 'customReport') {
-        return translate('HideReports_TypeCustomReport');
+        return translate('HiddenReports_TypeCustomReport');
       }
 
       if (type === 'customDimension') {
-        return translate('HideReports_TypeCustomDimension');
+        return translate('HiddenReports_TypeCustomDimension');
       }
 
       if (type === 'widget') {
-        return translate('HideReports_TypeWidget');
+        return translate('HiddenReports_TypeWidget');
       }
 
-      return translate('HideReports_TypeCore');
+      return translate('HiddenReports_TypeCore');
     },
     isLocked(report: HiddenReport): boolean {
       return !this.isGlobal && report.hiddenGlobally;
@@ -317,7 +319,7 @@ export default defineComponent({
     onToggleReport(report: HiddenReport, event: Event) {
       const hidden = (event.target as HTMLInputElement).checked;
       const message = translate(
-        hidden ? 'HideReports_SavedHidden' : 'HideReports_SavedVisible',
+        hidden ? 'HiddenReports_SavedHidden' : 'HiddenReports_SavedVisible',
         report.name,
       );
 
@@ -327,7 +329,7 @@ export default defineComponent({
       const hidden = (event.target as HTMLInputElement).checked;
       const reports = this.editableReportsOf(category).filter((report) => report.hidden !== hidden);
       const message = translate(
-        hidden ? 'HideReports_SavedCategoryHidden' : 'HideReports_SavedCategoryVisible',
+        hidden ? 'HiddenReports_SavedCategoryHidden' : 'HiddenReports_SavedCategoryVisible',
         category.name,
       );
 
@@ -346,8 +348,8 @@ export default defineComponent({
       });
 
       const params = this.isGlobal
-        ? { method: 'HideReports.setReportsHiddenGlobally' }
-        : { method: 'HideReports.setReportsHidden', idSite: this.idSite };
+        ? { method: 'HiddenReports.setReportsHiddenGlobally' }
+        : { method: 'HiddenReports.setReportsHidden', idSite: this.idSite };
 
       AjaxHelper.post(params, {
         reportIds: reports.map((report) => report.id),
@@ -360,7 +362,7 @@ export default defineComponent({
         }
 
         NotificationsStore.show({
-          id: 'HideReports.saved',
+          id: 'HiddenReports.saved',
           message,
           context: 'success',
           type: 'toast',

@@ -7,7 +7,7 @@
  * @license https://www.gnu.org/licenses/gpl-3.0.html GPL v3 or later
  */
 
-namespace Piwik\Plugins\HideReports;
+namespace Piwik\Plugins\HiddenReports;
 
 use Piwik\Common;
 use Piwik\Menu\MenuAdmin;
@@ -23,11 +23,11 @@ class Menu extends \Piwik\Plugin\Menu
         $idSite          = Common::getRequestVar('idSite', $default, 'int');
 
         if (!empty($idSite) && Piwik::isUserHasAdminAccess($idSite)) {
-            $menu->addMeasurableItem('HideReports_MenuSite', $this->urlForAction('manage'), $order = 42);
+            $menu->addMeasurableItem('HiddenReports_MenuSite', $this->urlForAction('manage'), $order = 42);
         }
 
         if (Piwik::hasUserSuperUserAccess()) {
-            $menu->addSystemItem('HideReports_MenuGlobal', $this->urlForAction('manageGlobal'), $order = 42);
+            $menu->addSystemItem('HiddenReports_MenuGlobal', $this->urlForAction('manageGlobal'), $order = 42);
         }
     }
 }

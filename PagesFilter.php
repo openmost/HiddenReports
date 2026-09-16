@@ -7,7 +7,7 @@
  * @license https://www.gnu.org/licenses/gpl-3.0.html GPL v3 or later
  */
 
-namespace Piwik\Plugins\HideReports;
+namespace Piwik\Plugins\HiddenReports;
 
 /**
  * Removes widgets from the output of API.getReportPagesMetadata.

@@ -7,13 +7,13 @@
  * @license https://www.gnu.org/licenses/gpl-3.0.html GPL v3 or later
  */
 
-namespace Piwik\Plugins\HideReports\tests\Unit;
+namespace Piwik\Plugins\HiddenReports\tests\Unit;
 
 use PHPUnit\Framework\TestCase;
-use Piwik\Plugins\HideReports\PagesFilter;
+use Piwik\Plugins\HiddenReports\PagesFilter;
 
 /**
- * @group HideReports
+ * @group HiddenReports
  * @group PagesFilterTest
  * @group Plugins
  */

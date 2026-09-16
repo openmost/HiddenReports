@@ -6,7 +6,7 @@ This plugin is available in the official marketplace of Matomo. You have to inst
 
 - Go to the administration panel
 - Look for the Marketplace section and select "Plugins" in the dropdown
-- Then search for "**Hide Reports**", install and activate the plugin.
+- Then search for "**Hidden Reports**", install and activate the plugin.
 - Go to __Administration > Websites > Hidden reports__ or __Administration > System > Hidden reports__.
 
 __Who can hide reports ?__

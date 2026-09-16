@@ -1,5 +1,5 @@
 {
-  "HideReports": {
+  "HiddenReports": {
     "PluginDescription": "Hide reports from the reporting menu, per website or for all websites, while keeping them archived and available through the API and dashboards.",
     "MenuSite": "Hidden reports",
     "MenuGlobal": "Hidden reports",

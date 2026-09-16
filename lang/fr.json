@@ -1,5 +1,5 @@
 {
-  "HideReports": {
+  "HiddenReports": {
     "PluginDescription": "Masquez des rapports du menu, pour un site ou pour tous les sites, tout en les gardant archivés et disponibles via l'API et les tableaux de bord.",
     "MenuSite": "Rapports masqués",
     "MenuGlobal": "Rapports masqués",

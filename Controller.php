@@ -7,7 +7,7 @@
  * @license https://www.gnu.org/licenses/gpl-3.0.html GPL v3 or later
  */
 
-namespace Piwik\Plugins\HideReports;
+namespace Piwik\Plugins\HiddenReports;
 
 use Piwik\Common;
 use Piwik\Piwik;
@@ -23,7 +23,7 @@ class Controller extends \Piwik\Plugin\ControllerAdmin
         return $this->renderTemplate('manage', [
             'scope'  => 'site',
             'idSite' => $idSite,
-            'title'  => Piwik::translate('HideReports_SiteTitle'),
+            'title'  => Piwik::translate('HiddenReports_SiteTitle'),
         ]);
     }
 
@@ -38,7 +38,7 @@ class Controller extends \Piwik\Plugin\ControllerAdmin
         return $this->renderTemplate('manage', [
             'scope'  => 'global',
             'idSite' => $idSite,
-            'title'  => Piwik::translate('HideReports_GlobalTitle'),
+            'title'  => Piwik::translate('HiddenReports_GlobalTitle'),
         ]);
     }
 }

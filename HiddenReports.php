@@ -7,11 +7,11 @@
  * @license https://www.gnu.org/licenses/gpl-3.0.html GPL v3 or later
  */
 
-namespace Piwik\Plugins\HideReports;
+namespace Piwik\Plugins\HiddenReports;
 
 use Piwik\API\Request;
 
-class HideReports extends \Piwik\Plugin
+class HiddenReports extends \Piwik\Plugin
 {
     public function registerEvents()
     {
@@ -65,7 +65,7 @@ class HideReports extends \Piwik\Plugin
 
     public function getStylesheetFiles(&$stylesheets)
     {
-        $stylesheets[] = 'plugins/HideReports/vue/src/ManageHiddenReports/ManageHiddenReports.less';
+        $stylesheets[] = 'plugins/HiddenReports/vue/src/ManageHiddenReports/ManageHiddenReports.less';
     }
 
     public function getClientSideTranslationKeys(&$translationKeys)
@@ -79,7 +79,7 @@ class HideReports extends \Piwik\Plugin
         ];
 
         foreach ($keys as $key) {
-            $translationKeys[] = 'HideReports_' . $key;
+            $translationKeys[] = 'HiddenReports_' . $key;
         }
     }
 }
