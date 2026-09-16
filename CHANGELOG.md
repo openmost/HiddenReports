@@ -1,5 +1,9 @@
 ## Changelog
 
+### v6.0.0
+
+- Matomo 6 compatibility
+
 ### v5.0.0
 
 - Hide reports from the reporting menu of a website (website admins)
