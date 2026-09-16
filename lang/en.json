@@ -1,0 +1,32 @@
+{
+  "HideReports": {
+    "PluginDescription": "Hide reports from the reporting menu, per website or for all websites, while keeping them archived and available through the API and dashboards.",
+    "MenuSite": "Hidden reports",
+    "MenuGlobal": "Hidden reports",
+    "SiteTitle": "Hidden reports for this website",
+    "GlobalTitle": "Hidden reports for all websites",
+    "SiteIntro": "Switch a report to \"Hidden\" to remove it from the reporting menu of this website. The report is still archived and stays available through the API, exports, scheduled reports and dashboard widgets. Show it again at any time, its full history is kept.",
+    "GlobalIntro": "Switch a report to \"Hidden\" to remove it from the reporting menu of every website at once. The report is still archived and stays available through the API, exports, scheduled reports and dashboard widgets. Show it again at any time, its full history is kept.",
+    "GlobalSiteSpecificNote": "This list is built from the website selected at the top of the page. Reports that belong to a single website (goals, custom dimensions, custom reports) are not listed here: hide them from the \"Hidden reports\" page of that website.",
+    "ScopeNote": "Reports hidden by a super user for all websites are locked on this page.",
+    "Search": "Search a report",
+    "NoReportsFound": "No report matches your search.",
+    "ColumnReport": "Report",
+    "ColumnType": "Type",
+    "ColumnStatus": "Status in the menu",
+    "Visible": "Visible",
+    "Hidden": "Hidden",
+    "TypeCore": "Report",
+    "TypeCustomReport": "Custom Report",
+    "TypeCustomDimension": "Custom Dimension",
+    "HiddenGlobally": "Hidden for all websites by a super user",
+    "SavedHidden": "\"%1$s\" is now hidden from the reporting menu.",
+    "SavedVisible": "\"%1$s\" is visible again in the reporting menu.",
+    "ErrorUnknownReport": "This report does not exist for this website.",
+    "TypeWidget": "Widget",
+    "HiddenOfTotal": "%1$s / %2$s hidden",
+    "HideCategory": "Hide or show every report of this category",
+    "SavedCategoryHidden": "All reports of \"%1$s\" are now hidden from the reporting menu.",
+    "SavedCategoryVisible": "All reports of \"%1$s\" are visible again in the reporting menu."
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "HideReports": {
+    "PluginDescription": "Masquez des rapports du menu, pour un site ou pour tous les sites, tout en les gardant archivés et disponibles via l'API et les tableaux de bord.",
+    "MenuSite": "Rapports masqués",
+    "MenuGlobal": "Rapports masqués",
+    "SiteTitle": "Rapports masqués pour ce site",
+    "GlobalTitle": "Rapports masqués pour tous les sites",
+    "SiteIntro": "Passez un rapport sur « Masqué » pour le retirer du menu de ce site. Le rapport reste archivé et disponible via l'API, les exports, les rapports planifiés et les widgets du tableau de bord. Vous pouvez le réafficher à tout moment, tout son historique est conservé.",
+    "GlobalIntro": "Passez un rapport sur « Masqué » pour le retirer du menu de tous les sites d'un coup. Le rapport reste archivé et disponible via l'API, les exports, les rapports planifiés et les widgets du tableau de bord. Vous pouvez le réafficher à tout moment, tout son historique est conservé.",
+    "GlobalSiteSpecificNote": "Cette liste est construite à partir du site sélectionné en haut de la page. Les rapports propres à un seul site (objectifs, dimensions personnalisées, rapports personnalisés) n'apparaissent pas ici : masquez-les depuis la page « Rapports masqués » du site concerné.",
+    "ScopeNote": "Les rapports masqués pour tous les sites par un super utilisateur sont verrouillés sur cette page.",
+    "Search": "Rechercher un rapport",
+    "NoReportsFound": "Aucun rapport ne correspond à votre recherche.",
+    "ColumnReport": "Rapport",
+    "ColumnType": "Type",
+    "ColumnStatus": "État dans le menu",
+    "Visible": "Visible",
+    "Hidden": "Masqué",
+    "TypeCore": "Rapport",
+    "TypeCustomReport": "Rapport personnalisé",
+    "TypeCustomDimension": "Dimension personnalisée",
+    "HiddenGlobally": "Masqué pour tous les sites par un super utilisateur",
+    "SavedHidden": "« %1$s » est maintenant masqué du menu.",
+    "SavedVisible": "« %1$s » est de nouveau visible dans le menu.",
+    "ErrorUnknownReport": "Ce rapport n'existe pas pour ce site.",
+    "TypeWidget": "Widget",
+    "HiddenOfTotal": "%1$s / %2$s masqué(s)",
+    "HideCategory": "Masquer ou afficher tous les rapports de cette catégorie",
+    "SavedCategoryHidden": "Tous les rapports de « %1$s » sont maintenant masqués du menu.",
+    "SavedCategoryVisible": "Tous les rapports de « %1$s » sont de nouveau visibles dans le menu."
+  }
+}

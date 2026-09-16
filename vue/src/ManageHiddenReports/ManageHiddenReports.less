@@ -1,0 +1,153 @@
+.hideReportsManage {
+  .hideReportsSearch {
+    max-width: 480px;
+  }
+
+  .hideReportsEmpty {
+    font-style: italic;
+  }
+
+  .hideReportsCategory {
+    border: 1px solid @theme-color-border;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    background-color: @theme-color-background-base;
+    overflow: hidden;
+  }
+
+  .hideReportsCategoryHeader {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px 12px;
+    padding: 10px 14px;
+    cursor: pointer;
+    user-select: none;
+
+    &:hover,
+    &:focus-visible {
+      background-color: @theme-color-background-tinyContrast;
+    }
+
+    &:focus:not(:focus-visible) {
+      outline: none;
+    }
+  }
+
+  .hideReportsCategoryOpen .hideReportsCategoryHeader {
+    border-bottom: 1px solid @theme-color-border;
+  }
+
+  .hideReportsChevron {
+    font-size: 12px;
+    color: @theme-color-text-light;
+  }
+
+  .hideReportsCategoryName {
+    font-size: 15px;
+    font-weight: bold;
+    color: @theme-color-text;
+  }
+
+  .hideReportsCategoryCount {
+    font-size: 12px;
+    color: @theme-color-text-lighter;
+  }
+
+  .hideReportsCategorySwitch {
+    margin-left: auto;
+    cursor: default;
+  }
+
+  .switch label {
+    color: @theme-color-text;
+    font-size: 13px;
+  }
+
+  // some reports of the category are hidden: lever halfway
+  .switch label input[type=checkbox]:not(:checked) + .lever.hideReportsLeverPartial:after {
+    left: 9px;
+    background-color: @theme-color-brand;
+  }
+
+  .hideReportsTable {
+    margin: 0;
+
+    .hideReportsColType {
+      width: 200px;
+    }
+
+    .hideReportsColStatus {
+      width: 260px;
+    }
+
+    tr.hideReportsSubcategory td {
+      font-weight: bold;
+      background-color: @theme-color-background-tinyContrast;
+    }
+
+    tr.hideReportsIsHidden .hideReportsName {
+      color: @theme-color-text-lighter;
+      text-decoration: line-through;
+    }
+
+    .hideReportsId {
+      display: block;
+      margin-top: 2px;
+      font-size: 11px;
+      color: @theme-color-text-lighter;
+      background: none;
+      padding: 0;
+      word-break: break-all;
+    }
+
+    .hideReportsLocked {
+      display: block;
+      margin-top: 4px;
+      font-size: 11px;
+      color: @theme-color-text-lighter;
+
+      &:before {
+        margin-right: 4px;
+      }
+    }
+  }
+
+  .hideReportsBadge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 11px;
+    line-height: 16px;
+    white-space: nowrap;
+    border: 1px solid @theme-color-border;
+    color: @theme-color-text-light;
+  }
+
+  .hideReportsBadge-customReport,
+  .hideReportsBadge-customDimension {
+    border-color: @theme-color-brand;
+    color: @theme-color-brand;
+  }
+
+  .hideReportsBadge-widget {
+    border-style: dashed;
+  }
+}
+
+// ContentTable makes tables bleed to the card edges (negative margin, width + 40px): keep them inside the category
+.card > .card-content .hideReportsManage .hideReportsCategory,
+.hideReportsManage .card > .card-content .hideReportsCategory {
+  .card-table.hideReportsTable,
+  .contentTableWrapper > .card-table.hideReportsTable {
+    margin: 0;
+    width: 100%;
+    min-width: 100%;
+    border: none;
+  }
+
+  .contentTableWrapper {
+    margin: 0;
+    width: 100%;
+  }
+}
