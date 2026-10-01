@@ -1,0 +1,43 @@
+{
+  "HiddenReports": {
+    "PluginDescription": "Blendet Berichte im Berichtsmenü aus, pro Webseite oder für alle Webseiten, während sie weiterhin archiviert und über die API und Dashboards verfügbar bleiben.",
+    "MenuSite": "Ausgeblendete Berichte",
+    "MenuGlobal": "Ausgeblendete Berichte",
+    "SiteTitle": "Ausgeblendete Berichte für diese Webseite",
+    "GlobalTitle": "Ausgeblendete Berichte für alle Webseiten",
+    "SiteIntro": "Stellen Sie einen Bericht auf „Ausgeblendet“, um ihn aus dem Berichtsmenü dieser Webseite zu entfernen. Der Bericht wird weiterhin archiviert und bleibt über die API, Exporte, geplante Berichte und Dashboard-Widgets verfügbar. Sie können ihn jederzeit wieder einblenden, seine gesamte Historie bleibt erhalten.",
+    "GlobalIntro": "Stellen Sie einen Bericht auf „Ausgeblendet“, um ihn auf einen Schlag aus dem Berichtsmenü aller Webseiten zu entfernen. Der Bericht wird weiterhin archiviert und bleibt über die API, Exporte, geplante Berichte und Dashboard-Widgets verfügbar. Sie können ihn jederzeit wieder einblenden, seine gesamte Historie bleibt erhalten.",
+    "GlobalSiteSpecificNote": "Diese Liste basiert auf der oben auf der Seite ausgewählten Webseite. Berichte, die zu einer einzelnen Webseite gehören (Ziele, benutzerdefinierte Dimensionen, benutzerdefinierte Berichte), werden hier nicht aufgeführt: Blenden Sie sie auf der Seite „Ausgeblendete Berichte“ der jeweiligen Webseite aus.",
+    "ScopeNote": "Berichte, die ein Hauptadministrator für alle Webseiten ausgeblendet hat, sind auf dieser Seite gesperrt.",
+    "Search": "Bericht suchen",
+    "NoReportsFound": "Kein Bericht entspricht Ihrer Suche.",
+    "ColumnReport": "Bericht",
+    "ColumnType": "Typ",
+    "ColumnStatus": "Status im Menü",
+    "Visible": "Sichtbar",
+    "Hidden": "Ausgeblendet",
+    "TypeCore": "Bericht",
+    "TypeCustomReport": "Benutzerdefinierter Bericht",
+    "TypeCustomDimension": "Benutzerdefinierte Dimension",
+    "HiddenGlobally": "Von einem Hauptadministrator für alle Webseiten ausgeblendet",
+    "SavedHidden": "„%1$s“ ist jetzt im Berichtsmenü ausgeblendet.",
+    "SavedVisible": "„%1$s“ ist im Berichtsmenü wieder sichtbar.",
+    "ErrorUnknownReport": "Dieser Bericht existiert für diese Webseite nicht.",
+    "TypeWidget": "Widget",
+    "HiddenOfTotal": "%1$s / %2$s ausgeblendet",
+    "HideCategory": "Alle Berichte dieser Kategorie aus- oder einblenden",
+    "SavedCategoryHidden": "Alle Berichte von „%1$s“ sind jetzt im Berichtsmenü ausgeblendet.",
+    "SavedCategoryVisible": "Alle Berichte von „%1$s“ sind im Berichtsmenü wieder sichtbar."
+  },
+  "OpenmostCommunication": {
+    "Dismiss": "Ausblenden",
+    "WidgetName": "Openmost: Einrichtung des KI-Chatbot-Trackings",
+    "AIChatbotsTitle": "Brauchen Sie Hilfe beim Einrichten des KI-Chatbot-Trackings?",
+    "AIChatbotsBody": "Als offizieller Matomo Implementation Partner richtet Openmost das KI-Chatbot-Tracking für Sie ein, auf Matomo On-Premise oder Cloud.",
+    "AIChatbotsCta": "Tracking einrichten lassen",
+    "TrackingPlanTitle": "Ereignisse müssen manuell eingerichtet werden",
+    "TrackingPlanBody": "Ereignisse messen Klicks, Downloads, Formularübermittlungen oder Videowiedergaben, sobald sie erfasst werden. Als offizieller Matomo Implementation Partner konzipiert und setzt Openmost einen Tracking-Plan um, der zu Ihrer Website passt.",
+    "TrackingPlanCta": "Meinen Tracking-Plan erstellen",
+    "EventsEnhancedLink": "Holen Sie mit Events Enhanced mehr aus Ihren Ereignissen heraus"
+  }
+}

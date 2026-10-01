@@ -1,0 +1,43 @@
+{
+  "HiddenReports": {
+    "PluginDescription": "レポートをアーカイブしたまま API やダッシュボードで利用可能にしつつ、ウェブサイトごとまたは全ウェブサイトでレポートメニューから非表示にします。",
+    "MenuSite": "非表示のレポート",
+    "MenuGlobal": "非表示のレポート",
+    "SiteTitle": "このウェブサイトの非表示のレポート",
+    "GlobalTitle": "全ウェブサイトの非表示のレポート",
+    "SiteIntro": "レポートを「非表示」に切り替えると、このウェブサイトのレポートメニューから削除されます。レポートは引き続きアーカイブされ、API、エクスポート、定期レポート、ダッシュボードのウィジェットで利用できます。いつでも再表示でき、履歴はすべて保持されます。",
+    "GlobalIntro": "レポートを「非表示」に切り替えると、すべてのウェブサイトのレポートメニューから一度に削除されます。レポートは引き続きアーカイブされ、API、エクスポート、定期レポート、ダッシュボードのウィジェットで利用できます。いつでも再表示でき、履歴はすべて保持されます。",
+    "GlobalSiteSpecificNote": "この一覧は、ページ上部で選択したウェブサイトをもとに作成されています。単一のウェブサイトに属するレポート（目標、カスタムディメンション、カスタムレポート）はここには表示されません。そのウェブサイトの「非表示のレポート」ページで非表示にしてください。",
+    "ScopeNote": "スーパーユーザーが全ウェブサイトで非表示にしたレポートは、このページではロックされています。",
+    "Search": "レポートを検索",
+    "NoReportsFound": "検索に一致するレポートはありません。",
+    "ColumnReport": "レポート",
+    "ColumnType": "種類",
+    "ColumnStatus": "メニューでのステータス",
+    "Visible": "表示",
+    "Hidden": "非表示",
+    "TypeCore": "レポート",
+    "TypeCustomReport": "カスタムレポート",
+    "TypeCustomDimension": "カスタムディメンション",
+    "HiddenGlobally": "スーパーユーザーにより全ウェブサイトで非表示",
+    "SavedHidden": "「%1$s」はレポートメニューで非表示になりました。",
+    "SavedVisible": "「%1$s」はレポートメニューに再び表示されます。",
+    "ErrorUnknownReport": "このレポートはこのウェブサイトには存在しません。",
+    "TypeWidget": "ウィジェット",
+    "HiddenOfTotal": "%2$s 件中 %1$s 件が非表示",
+    "HideCategory": "このカテゴリのすべてのレポートを非表示 / 表示",
+    "SavedCategoryHidden": "「%1$s」のすべてのレポートがレポートメニューで非表示になりました。",
+    "SavedCategoryVisible": "「%1$s」のすべてのレポートがレポートメニューに再び表示されます。"
+  },
+  "OpenmostCommunication": {
+    "Dismiss": "閉じる",
+    "WidgetName": "Openmost: AI チャットボットトラッキングの設定",
+    "AIChatbotsTitle": "AI チャットボットトラッキングの設定でお困りですか？",
+    "AIChatbotsBody": "Matomo 公式 Implementation Partner の Openmost が、Matomo On-Premise でも Cloud でも、AI チャットボットトラッキングを代わりに設定します。",
+    "AIChatbotsCta": "設定を依頼する",
+    "TrackingPlanTitle": "イベントは手動で設定する必要があります",
+    "TrackingPlanBody": "イベントを計測すると、クリック、ダウンロード、フォーム送信、動画再生などを把握できます（トラッキングの設定が必要です）。Matomo 公式 Implementation Partner の Openmost が、サイトに合ったトラッキングプランを設計・実装します。",
+    "TrackingPlanCta": "トラッキングプランを作成する",
+    "EventsEnhancedLink": "Events Enhanced でイベントをさらに活用する"
+  }
+}

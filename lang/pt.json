@@ -1,0 +1,43 @@
+{
+  "HiddenReports": {
+    "PluginDescription": "Oculte relatórios do menu de relatórios, por site ou para todos os sites, mantendo-os arquivados e disponíveis através da API e dos painéis.",
+    "MenuSite": "Relatórios ocultos",
+    "MenuGlobal": "Relatórios ocultos",
+    "SiteTitle": "Relatórios ocultos deste site",
+    "GlobalTitle": "Relatórios ocultos de todos os sites",
+    "SiteIntro": "Passe um relatório para \"Oculto\" para o remover do menu de relatórios deste site. O relatório continua a ser arquivado e disponível através da API, das exportações, dos relatórios agendados e dos widgets do painel. Volte a mostrá-lo a qualquer momento, todo o histórico é mantido.",
+    "GlobalIntro": "Passe um relatório para \"Oculto\" para o remover de uma só vez do menu de relatórios de todos os sites. O relatório continua a ser arquivado e disponível através da API, das exportações, dos relatórios agendados e dos widgets do painel. Volte a mostrá-lo a qualquer momento, todo o histórico é mantido.",
+    "GlobalSiteSpecificNote": "Esta lista é criada a partir do site selecionado no topo da página. Os relatórios que pertencem a um único site (objetivos, dimensões personalizadas, relatórios personalizados) não são listados aqui: oculte-os na página \"Relatórios ocultos\" desse site.",
+    "ScopeNote": "Os relatórios ocultos por um super-utilizador para todos os sites estão bloqueados nesta página.",
+    "Search": "Pesquisar um relatório",
+    "NoReportsFound": "Nenhum relatório corresponde à sua pesquisa.",
+    "ColumnReport": "Relatório",
+    "ColumnType": "Tipo",
+    "ColumnStatus": "Estado no menu",
+    "Visible": "Visível",
+    "Hidden": "Oculto",
+    "TypeCore": "Relatório",
+    "TypeCustomReport": "Relatório personalizado",
+    "TypeCustomDimension": "Dimensão personalizada",
+    "HiddenGlobally": "Oculto para todos os sites por um super-utilizador",
+    "SavedHidden": "\"%1$s\" está agora oculto do menu de relatórios.",
+    "SavedVisible": "\"%1$s\" está novamente visível no menu de relatórios.",
+    "ErrorUnknownReport": "Este relatório não existe para este site.",
+    "TypeWidget": "Widget",
+    "HiddenOfTotal": "%1$s / %2$s ocultos",
+    "HideCategory": "Ocultar ou mostrar todos os relatórios desta categoria",
+    "SavedCategoryHidden": "Todos os relatórios de \"%1$s\" estão agora ocultos do menu de relatórios.",
+    "SavedCategoryVisible": "Todos os relatórios de \"%1$s\" estão novamente visíveis no menu de relatórios."
+  },
+  "OpenmostCommunication": {
+    "Dismiss": "Dispensar",
+    "WidgetName": "Openmost: configuração do seguimento de chatbots de IA",
+    "AIChatbotsTitle": "Precisa de ajuda para configurar o seguimento de chatbots de IA?",
+    "AIChatbotsBody": "Como Implementation Partner oficial da Matomo, a Openmost pode configurar o seguimento de chatbots de IA por si, no Matomo On-Premise ou Cloud.",
+    "AIChatbotsCta": "Pedir a configuração",
+    "TrackingPlanTitle": "Os eventos têm de ser configurados manualmente",
+    "TrackingPlanBody": "Os eventos medem cliques, transferências, envios de formulários ou reproduções de vídeo, desde que sejam seguidos. Como Implementation Partner oficial da Matomo, a Openmost concebe e implementa um plano de marcação adaptado ao seu site.",
+    "TrackingPlanCta": "Criar o meu plano de marcação",
+    "EventsEnhancedLink": "Tire mais partido dos seus eventos com o Events Enhanced"
+  }
+}

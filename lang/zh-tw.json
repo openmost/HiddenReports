@@ -1,0 +1,43 @@
+{
+  "HiddenReports": {
+    "PluginDescription": "從報表選單中隱藏報表（可針對單一網站或所有網站），同時仍保留彙整，並可透過 API 與展示板使用。",
+    "MenuSite": "隱藏的報表",
+    "MenuGlobal": "隱藏的報表",
+    "SiteTitle": "此網站隱藏的報表",
+    "GlobalTitle": "所有網站隱藏的報表",
+    "SiteIntro": "將報表切換為「隱藏」即可從此網站的報表選單中移除。報表仍會彙整，並可透過 API、匯出、排程報表與展示板小工具使用。你隨時可以再次顯示，完整歷史資料都會保留。",
+    "GlobalIntro": "將報表切換為「隱藏」即可一次從所有網站的報表選單中移除。報表仍會彙整，並可透過 API、匯出、排程報表與展示板小工具使用。你隨時可以再次顯示，完整歷史資料都會保留。",
+    "GlobalSiteSpecificNote": "此清單依據頁面頂端所選的網站建立。屬於單一網站的報表（目標、自訂維度、自訂報表）不會列在這裡：請從該網站的「隱藏的報表」頁面隱藏它們。",
+    "ScopeNote": "超級使用者針對所有網站隱藏的報表在此頁面上會被鎖定。",
+    "Search": "搜尋報表",
+    "NoReportsFound": "沒有符合搜尋條件的報表。",
+    "ColumnReport": "報表",
+    "ColumnType": "類型",
+    "ColumnStatus": "選單中的狀態",
+    "Visible": "顯示",
+    "Hidden": "隱藏",
+    "TypeCore": "報表",
+    "TypeCustomReport": "自訂報表",
+    "TypeCustomDimension": "自訂維度",
+    "HiddenGlobally": "已由超級使用者對所有網站隱藏",
+    "SavedHidden": "「%1$s」已從報表選單中隱藏。",
+    "SavedVisible": "「%1$s」已重新顯示於報表選單中。",
+    "ErrorUnknownReport": "此網站不存在這份報表。",
+    "TypeWidget": "小工具",
+    "HiddenOfTotal": "已隱藏 %1$s / %2$s",
+    "HideCategory": "隱藏或顯示此類別的所有報表",
+    "SavedCategoryHidden": "「%1$s」的所有報表已從報表選單中隱藏。",
+    "SavedCategoryVisible": "「%1$s」的所有報表已重新顯示於報表選單中。"
+  },
+  "OpenmostCommunication": {
+    "Dismiss": "關閉",
+    "WidgetName": "Openmost：AI 聊天機器人追蹤設定",
+    "AIChatbotsTitle": "需要協助設定 AI 聊天機器人追蹤嗎？",
+    "AIChatbotsBody": "作為 Matomo 官方 Implementation Partner，Openmost 可以替你設定 AI 聊天機器人追蹤，適用於 Matomo On-Premise 或 Cloud。",
+    "AIChatbotsCta": "請人幫我設定",
+    "TrackingPlanTitle": "事件需要手動設定",
+    "TrackingPlanBody": "事件可以衡量點擊、下載、表單送出或影片播放，前提是已完成追蹤設定。作為 Matomo 官方 Implementation Partner，Openmost 為你的網站設計並實作合適的追蹤計畫。",
+    "TrackingPlanCta": "建立我的追蹤計畫",
+    "EventsEnhancedLink": "使用 Events Enhanced 充分運用你的事件資料"
+  }
+}

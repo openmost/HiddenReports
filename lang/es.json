@@ -1,0 +1,43 @@
+{
+  "HiddenReports": {
+    "PluginDescription": "Oculte informes del menú de informes, por sitio web o para todos los sitios web, manteniéndolos archivados y disponibles mediante la API y los tableros.",
+    "MenuSite": "Informes ocultos",
+    "MenuGlobal": "Informes ocultos",
+    "SiteTitle": "Informes ocultos de este sitio web",
+    "GlobalTitle": "Informes ocultos de todos los sitios web",
+    "SiteIntro": "Cambie un informe a \"Oculto\" para quitarlo del menú de informes de este sitio web. El informe se sigue archivando y permanece disponible mediante la API, las exportaciones, los informes programados y los módulos del tablero. Puede volver a mostrarlo en cualquier momento, se conserva todo su histórico.",
+    "GlobalIntro": "Cambie un informe a \"Oculto\" para quitarlo a la vez del menú de informes de todos los sitios web. El informe se sigue archivando y permanece disponible mediante la API, las exportaciones, los informes programados y los módulos del tablero. Puede volver a mostrarlo en cualquier momento, se conserva todo su histórico.",
+    "GlobalSiteSpecificNote": "Esta lista se genera a partir del sitio web seleccionado en la parte superior de la página. Los informes que pertenecen a un único sitio web (objetivos, dimensiones personalizadas, informes personalizados) no aparecen aquí: ocúltelos desde la página \"Informes ocultos\" de ese sitio web.",
+    "ScopeNote": "Los informes ocultos por un superusuario para todos los sitios web están bloqueados en esta página.",
+    "Search": "Buscar un informe",
+    "NoReportsFound": "Ningún informe coincide con su búsqueda.",
+    "ColumnReport": "Informe",
+    "ColumnType": "Tipo",
+    "ColumnStatus": "Estado en el menú",
+    "Visible": "Visible",
+    "Hidden": "Oculto",
+    "TypeCore": "Informe",
+    "TypeCustomReport": "Informe personalizado",
+    "TypeCustomDimension": "Dimensión personalizada",
+    "HiddenGlobally": "Oculto para todos los sitios web por un superusuario",
+    "SavedHidden": "\"%1$s\" ahora está oculto en el menú de informes.",
+    "SavedVisible": "\"%1$s\" vuelve a estar visible en el menú de informes.",
+    "ErrorUnknownReport": "Este informe no existe para este sitio web.",
+    "TypeWidget": "Módulo",
+    "HiddenOfTotal": "%1$s / %2$s ocultos",
+    "HideCategory": "Ocultar o mostrar todos los informes de esta categoría",
+    "SavedCategoryHidden": "Todos los informes de \"%1$s\" están ahora ocultos en el menú de informes.",
+    "SavedCategoryVisible": "Todos los informes de \"%1$s\" vuelven a estar visibles en el menú de informes."
+  },
+  "OpenmostCommunication": {
+    "Dismiss": "Descartar",
+    "WidgetName": "Openmost: configuración del seguimiento de chatbots de IA",
+    "AIChatbotsTitle": "¿Necesita ayuda para configurar el seguimiento de chatbots de IA?",
+    "AIChatbotsBody": "Como Implementation Partner oficial de Matomo, Openmost puede configurar el seguimiento de chatbots de IA por usted, en Matomo On-Premise o Cloud.",
+    "AIChatbotsCta": "Solicitar la configuración",
+    "TrackingPlanTitle": "Los eventos deben configurarse manualmente",
+    "TrackingPlanBody": "Los eventos miden clics, descargas, envíos de formularios o reproducciones de vídeo, siempre que se registren. Como Implementation Partner oficial de Matomo, Openmost diseña e implementa un plan de etiquetado adaptado a su sitio.",
+    "TrackingPlanCta": "Crear mi plan de etiquetado",
+    "EventsEnhancedLink": "Saque más partido a sus eventos con Events Enhanced"
+  }
+}

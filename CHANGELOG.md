@@ -1,5 +1,11 @@
 ## Changelog
 
+### v6.0.1
+
+- Translated into 12 languages
+- New Marketplace cover and screenshots
+- Shorter Marketplace description that fits the plugin cards, and campaign parameters on the Openmost links of the README.
+
 ### v6.0.0
 
 - Matomo 6 compatibility
