@@ -1,5 +1,11 @@
 ## Changelog
 
+### v5.0.1
+
+- Translated into 12 languages
+- New Marketplace cover and screenshots
+- Shorter Marketplace description that fits the plugin cards, and campaign parameters on the Openmost links of the README.
+
 ### v5.0.0
 
 - Hide reports from the reporting menu of a website (website admins)

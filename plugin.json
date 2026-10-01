@@ -1,25 +1,10 @@
 {
   "name": "HiddenReports",
-  "description": "Hide reports from the reporting menu, per website or for all websites, while keeping them archived and available through the API and dashboards",
-  "version": "5.0.0",
+  "description": "Hide reports from the menu, per website or for all websites, while keeping their data and API access.",
+  "version": "5.0.1",
   "theme": false,
   "require": {
     "matomo": ">=5.0.0,<6.0.0-b1"
-  },
-  "homepage": "https://openmost.com/matomo/extensions/hidden-reports",
-  "license": "GPL v3+",
-  "keywords": [
-    "reports",
-    "hide",
-    "menu",
-    "custom reports",
-    "custom dimensions",
-    "admin"
-  ],
-  "support": {
-    "email": "ronan@openmost.com",
-    "issues": "https://github.com/openmost/HiddenReports/issues",
-    "source": "https://github.com/openmost/HiddenReports"
   },
   "authors": [
     {
@@ -27,6 +12,21 @@
       "email": "ronan@openmost.com",
       "homepage": "https://openmost.com"
     }
+  ],
+  "support": {
+    "email": "ronan@openmost.com",
+    "issues": "https://github.com/openmost/HiddenReports/issues",
+    "source": "https://github.com/openmost/HiddenReports"
+  },
+  "homepage": "https://openmost.com/matomo/extensions/hidden-reports",
+  "license": "GPL v3+",
+  "keywords": [
+    "reports",
+    "hide",
+    "menu",
+    "custom-reports",
+    "custom-dimensions",
+    "admin"
   ],
   "category": "customisation"
 }
