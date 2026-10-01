@@ -5,6 +5,7 @@
 - Translated into 12 languages
 - New Marketplace cover and screenshots
 - Shorter Marketplace description that fits the plugin cards, and campaign parameters on the Openmost links of the README.
+- Requires Matomo 5.10.0 or later: the Openmost banner styles rely on the theme color variables introduced in Matomo 5.10.0.
 
 ### v5.0.0
 
