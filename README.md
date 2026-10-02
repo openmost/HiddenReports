@@ -16,7 +16,7 @@ Hide reports from the Matomo reporting menu, for one website or for all websites
 
 ## Requirements
 
-- Matomo 5.10.0 or later, up to Matomo 6 excluded (`>=5.10.0,<6.0.0-b1`)
+- Matomo 5.0.0 or later, up to Matomo 6 excluded (`>=5.0.0,<6.0.0-b1`)
 - On Matomo 6, install Hidden Reports 6.x instead.
 
 ## Installation / Configuration
