@@ -1,8 +1,10 @@
 # Hidden Reports
 
+## Description
+
 Hide reports from the Matomo reporting menu, for one website or for all websites at once, without losing any data.
 
-## Features
+### Features
 
 - **Two management pages**:
   - Administration > Websites > Hidden reports: website admins hide reports for the selected website.
@@ -14,12 +16,12 @@ Hide reports from the Matomo reporting menu, for one website or for all websites
 - **HTTP API**: `HiddenReports.getReports`, `HiddenReports.getGlobalReports`, `HiddenReports.getHiddenReports`, `HiddenReports.setReportHidden`, `HiddenReports.setReportsHidden`, `HiddenReports.setReportHiddenGlobally`, `HiddenReports.setReportsHiddenGlobally`.
 - Translated into 12 languages.
 
-## Requirements
+### Requirements
 
 - Matomo 5.0.0 or later, up to Matomo 6 excluded (`>=5.0.0,<6.0.0-b1`)
 - On Matomo 6, install Hidden Reports 6.x instead.
 
-## Installation / Configuration
+### Installation / Configuration
 
 1. Install Hidden Reports from the Marketplace (Administration > Platform > Marketplace) and activate it.
 2. Go to Administration > Websites > Hidden reports (admin access on the website) or Administration > System > Hidden reports (super user).
@@ -27,11 +29,11 @@ Hide reports from the Matomo reporting menu, for one website or for all websites
 
 Hidden reports are hidden for every user of the website, super users included. Only the Hidden reports pages keep listing them.
 
-## Privacy and data
+### Privacy and data
 
 The list of hidden reports is stored in the Matomo option table. It is cleaned when a website is deleted and when the plugin is uninstalled. The plugin sends no data to third parties.
 
-## Need help with Matomo?
+### Need help with Matomo?
 
 Openmost is an official Matomo Implementation Partner. To go further than a cleaner menu, we build [custom Matomo dashboards and KPI reports](https://openmost.com/matomo/services/dashboard-build?utm_source=matomo_marketplace&utm_medium=referral&utm_campaign=services&utm_content=hiddenreports) tailored to each audience, with KPIs defined with you and maintained over time.
 
