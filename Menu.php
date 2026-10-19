@@ -9,10 +9,10 @@
 
 namespace Piwik\Plugins\HiddenReports;
 
-use Piwik\Common;
 use Piwik\Menu\MenuAdmin;
 use Piwik\Piwik;
 use Piwik\Plugins\UsersManager\UserPreferences;
+use Piwik\Request;
 
 class Menu extends \Piwik\Plugin\Menu
 {
@@ -20,7 +20,7 @@ class Menu extends \Piwik\Plugin\Menu
     {
         $userPreferences = new UserPreferences();
         $default         = $userPreferences->getDefaultWebsiteId();
-        $idSite          = Common::getRequestVar('idSite', $default, 'int');
+        $idSite          = Request::fromRequest()->getIntegerParameter('idSite', (int) $default);
 
         if (!empty($idSite) && Piwik::isUserHasAdminAccess($idSite)) {
             $menu->addMeasurableItem('HiddenReports_MenuSite', $this->urlForAction('manage'), $order = 42);
