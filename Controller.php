@@ -9,15 +9,15 @@
 
 namespace Piwik\Plugins\HiddenReports;
 
-use Piwik\Common;
 use Piwik\Piwik;
 use Piwik\Plugins\UsersManager\UserPreferences;
+use Piwik\Request;
 
 class Controller extends \Piwik\Plugin\ControllerAdmin
 {
     public function manage()
     {
-        $idSite = Common::getRequestVar('idSite', 0, 'int');
+        $idSite = Request::fromRequest()->getIntegerParameter('idSite', 0);
         Piwik::checkUserHasAdminAccess($idSite);
 
         return $this->renderTemplate('manage', [
@@ -32,7 +32,7 @@ class Controller extends \Piwik\Plugin\ControllerAdmin
         Piwik::checkUserHasSuperUserAccess();
 
         $default = (new UserPreferences())->getDefaultWebsiteId();
-        $idSite  = Common::getRequestVar('idSite', $default, 'int');
+        $idSite  = Request::fromRequest()->getIntegerParameter('idSite', (int) $default);
         Piwik::checkUserHasViewAccess($idSite);
 
         return $this->renderTemplate('manage', [
